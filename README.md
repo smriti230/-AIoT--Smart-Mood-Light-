@@ -89,9 +89,7 @@ By combining voice recognition, text analysis, colour interpretation, and LED co
 
 #### FLOW CHART:
 
-##### ![image](https://github.com/smriti230/-AIoT--Smart-Mood-Light-/assets/118045433/9a30ea6a-661f-4aa4-9048-1b7afb2a3760)
-
-
+![image](https://github.com/smriti230/-AIoT--Smart-Mood-Light-/assets/118045433/9c1a330c-f308-441a-a0ed-9b6329b29443)
 
 
 
