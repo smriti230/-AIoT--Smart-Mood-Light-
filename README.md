@@ -42,9 +42,9 @@ To implement this project, Wiznet-W5300 TOE SHIELD board which, is connected to 
 •	PYTHON
 
 5.	APPS AND THE ONLINE SERVICES USED:
-1.	MQTT-BROKER
-2.	OPENAI
-3.	Google's speech-to-text API
+	1.	MQTT-BROKER
+	2.	OPENAI
+	3.	Google's speech-to-text API
 MQTT-BROKER:
 	MQTT acts as a broker, facilitating communication between Python and Arduino. Python sends RGB values via MQTT to the Arduino. Arduino, configured to receive MQTT messages, interprets the RGB data and controls the connected RGB LED accordingly. This enables seamless remote control of the RGB LED’s  colour using MQTT protocol, bridging Python and Arduino for effective IoT applications.
 
@@ -66,6 +66,8 @@ From Create new secret key option you can create a new API , It will generate on
 GOOGLE TEXT TO SPEECH:
 	recognized_text = recognizer.recognize_google(audio)
 this code snippet utilizes the Google text-to-speech API service through the recognize_google function provided by the SpeechRecognition library in Python. This function sends the recorded audio data to Google's servers for speech recognition processing, and then it returns the recognized text back to your Python program.In this case, the recognize_google function is using the Google Web Speech API to perform the speech-to-text conversion, allowing you to transcribe spoken language into written text.
+
+
 6.	WORKFLOW
 
 The workflow of this project “Smart Mood light” for turning on different colour on the basis of your desires command where you just gives the names of the shades you want on the basis of your mood and sometimes you just need explain the view and it will interpret the colour from that pharse and turn on the coloured LED, All the you don’t need say turn on for turning on the light. 
