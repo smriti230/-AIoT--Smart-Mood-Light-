@@ -33,18 +33,21 @@ To implement this project, Wiznet-W5300 TOE SHIELD board which, is connected to 
 3.	### SOFTWARES AND SERVICES USED
 
 •	MQTT SERVICE
+
 •	ARDUINO IDE
+
 •	PYCHARM
 
 4.	### PROGRAMMING LANGUAGES
 
 •	C++
+
 •	PYTHON
 
 5.	### APPS AND THE ONLINE SERVICES USED:
 	1.	MQTT-BROKER
-	2.	OPENAI
-	3.	Google's speech-to-text API
+	3.	OPENAI
+	4.	Google's speech-to-text API
     
 		#### MQTT-BROKER:
 		MQTT acts as a broker, facilitating communication between Python and Arduino. Python sends RGB values via MQTT to the Arduino. Arduino, configured to receive MQTT messages, interprets the RGB data and controls the connected RGB LED accordingly. This enables seamless remote control of the RGB LED’s  colour using MQTT protocol, bridging Python and Arduino for effective IoT applications.
