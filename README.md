@@ -45,13 +45,13 @@ To implement this project, Wiznet-W5300 TOE SHIELD board which, is connected to 
 	1.	MQTT-BROKER
 	2.	OPENAI
 	3.	Google's speech-to-text API
-MQTT-BROKER:
+#### MQTT-BROKER:
 	MQTT acts as a broker, facilitating communication between Python and Arduino. Python sends RGB values via MQTT to the Arduino. Arduino, configured to receive MQTT messages, interprets the RGB data and controls the connected RGB LED accordingly. This enables seamless remote control of the RGB LED’s  colour using MQTT protocol, bridging Python and Arduino for effective IoT applications.
 
-OPEN AI :
+#### OPEN AI :
 OpenAI provides web services that allow developers to access and utilize its advanced natural language processing models, like the GPT-3. These web services enable applications to integrate powerful language capabilities, such as text generation, language translation, sentiment analysis, and more. Developers can make API calls to interact with these models over the internet, enabling the integration of OpenAI's technology into a wide range of software applications and services.
 
-	Setting up with OpenAi :
+	##### Setting up with OpenAi :
 1.	https://openai.com/   Go to this link
  
 
@@ -63,12 +63,12 @@ OpenAI provides web services that allow developers to access and utilize its adv
  
 From Create new secret key option you can create a new API , It will generate once and have take a copy of that.
 
-GOOGLE TEXT TO SPEECH:
+#### GOOGLE TEXT TO SPEECH:
 	recognized_text = recognizer.recognize_google(audio)
 this code snippet utilizes the Google text-to-speech API service through the recognize_google function provided by the SpeechRecognition library in Python. This function sends the recorded audio data to Google's servers for speech recognition processing, and then it returns the recognized text back to your Python program.In this case, the recognize_google function is using the Google Web Speech API to perform the speech-to-text conversion, allowing you to transcribe spoken language into written text.
 
 
-6.	WORKFLOW
+6.	### WORKFLOW
 
 The workflow of this project “Smart Mood light” for turning on different colour on the basis of your desires command where you just gives the names of the shades you want on the basis of your mood and sometimes you just need explain the view and it will interpret the colour from that pharse and turn on the coloured LED, All the you don’t need say turn on for turning on the light. 
 
@@ -83,25 +83,25 @@ The workflow of this project “Smart Mood light” for turning on different col
 	
 By combining voice recognition, text analysis, colour interpretation, and LED control, the smart Lighting System ensures a seamless and personalized experience, making it a truly innovative and intuitive way to interact with lighting in your living space.
 
-FLOW CHART:
+#### FLOW CHART:
 	 
 
 
 
-SETTING UP USING PYTHON:
-Setting up with MQTT:
+#### SETTING UP USING PYTHON:
+##### Setting up with MQTT:
 import paho.mqtt.client as mqtt
 paho.mqtt.client: This library provides a client implementation for MQTT (Message Queuing Telemetry Transport), a lightweight messaging protocol widely used in the Internet of Things (IoT) domain for communication between devices. It allows you to connect to an MQTT broker and publish messages to topics or subscribe to topics to receive messages. It's commonly used for real-time data transmission in IoT applications.
 Installation: To install the paho-mqtt library, you can use pip, the Python package manager. Open your terminal or command prompt and run the following command:
  pip install paho-mqtt
 
-Setting up with OPENAI:
+###### Setting up with OPENAI:
 import openai
 openai: This library provides a Python interface for the OpenAI API, allowing you to interact with various natural language processing models and services provided by OpenAI. With this library, you can access powerful language models like GPT-3 to perform tasks such as text generation, language translation, question-answering, and more.
 Installation: To install the openai library, you can use pip as well. Run the following command in your terminal or command prompt:
 pip install openai
 
-Code:   
+###### Code:   
 
 import openai
 
@@ -121,6 +121,8 @@ prompt = f"""Convert the given text to a command among the following options:
 
 Text: {voice_command}
 
+
+
 Conditions:
 1. Find a specific color based on the text even if color is not directly mentioned.
 2. If the text contains a specific color, choose the command "Turn on [color] light".
@@ -131,6 +133,8 @@ Conditions:
 5. If the text contains the word "dim" and a color, choose the command "Turn on light [color] with reduced intensity."
 6. If the text does not contain any color, choose either "Turn off the light" or "Turn on the light" command.
 """
+
+
 
 // Call the OpenAI API to generate the AI response
 respond = openai.Completion.create(
@@ -143,38 +147,42 @@ respond = openai.Completion.create(
     presence_penalty=0
 )
 
+
+
 // Extract the generated text from the response
 generated_text = respond.choices[0].text.strip()
+
+
 
 This is the code for using Open Ai with python with the API key I will set up with python. Then 
 
 
-Setting Up with Recogniser:
+#### Setting Up with Recogniser:
 import speech_recognition as sr
 This library provides an easy-to-use interface to work with various speech recognition APIs. It allows you to convert spoken language into text and supports multiple speech recognition engines, such as Google Web Speech API, Microsoft Bing Voice Recognition, and more.
 Installation: To install the speech_recognition library, you can use pip:
 pip install SpeechRecognition
 
-Setting up with TTS:
+#### Setting up with TTS:
 import pyttsx3
 This library is a text-to-speech (TTS) engine that allows you to convert text into speech. It's useful for applications where you want your computer or device to speak out information to the user.
 Installation: To install the pyttsx3 library, you can use pip:
 pip install pyttsx3
 
-Another two libraries are used here threading, re. “threading” -- Threads are particularly useful when you want to perform tasks simultaneously without blocking the main program's execution. This can improve the responsiveness of your application, especially for I/O-bound tasks.
-“re” -- This library is part of Python's standard library and provides support for regular expressions. Regular expressions are a powerful tool for pattern matching and text manipulation. The re library allows you to search, find, and replace specific patterns within strings.
+###### Another two libraries are used here threading, re. “threading” -- Threads are particularly useful when you want to perform tasks simultaneously without blocking the main program's execution. This can improve the responsiveness of your application, especially for I/O-bound tasks.
+###### “re” -- This library is part of Python's standard library and provides support for regular expressions. Regular expressions are a powerful tool for pattern matching and text manipulation. The re library allows you to search, find, and replace specific patterns within strings.
 
-CIRCUIT CONNECTION:
+#### CIRCUIT CONNECTION:
 	 
 LED RGB has 4 pins R (red pin), Common anode, G (green pin), B (blue pin) which is connected with W5100s-EVB-pico board
 •	Red pin is connected with A0
 •	VCC is connected with 5V
 •	Green pin is connected with D14
 •	Blue pin is connected with D15
-CONNECTION DIAGRAM:
+#### CONNECTION DIAGRAM:
 	 
 
-SAMPLE UTTERANCES:
+### SAMPLE UTTERANCES:
 	I have tested the below given utterances for opening and closing and it was working fine. More phrases can be possible:
 	Turning on:
 •	Chat Turn on the light\4’
@@ -187,27 +195,39 @@ SAMPLE UTTERANCES:
 Turning on (colour):
 •	Chat I want to see cherry blossom’s view
 (Turn on the pink light)
+
 •	Chat Make it greenery
 (Turn on the green light)
+
 •	Chat I want to see forest view
 (Turn on light green light)
+
 •	Chat Please make it sunset like 
 (Turn on the orange)
+
 •	Chat can I have purple sky like view
 (Turn on the purple light)
+
 •	Chat Turn on magenta
 (Turn on magenta light)
+
 •	Chat Let’s have a party
 (Turn on all hue colours)
 
+
+
 Turning off:
 •	Chat I want darkness 
+
 •	Chat Turn off
+
 •	Chat I want to sleep
+
 •	Chat I want it to be dark
+
 •	Chat Let there be darkness 
 
-EXAMPLES:
+#### EXAMPLES:
 •	
 •	
 You said: Chat turn On Magenta
@@ -230,10 +250,10 @@ AI Response: Turn on the orange light
 
 
 
-OUTPUT:
+### OUTPUT:
  
 
 Video Link : https://youtu.be/zpPhmPdvTZE  
 
-CONCLUSIONS:
+### CONCLUSIONS:
 A smart mood light with ChatGPT + voice recognition + TTS is a device that can change its color and brightness in response to a user's voice commands or the content of a conversation. The ChatGPT component allows the light to generate text-based responses to user queries, while the voice recognition and TTS components allow it to understand and respond to spoken commands. This type of light has the potential to be a valuable tool for people with disabilities, as it can provide them with a way to control their environment without having to use their hands. It could also be used to create a more immersive and interactive experience for users of smart home devices.Overall, the combination of ChatGPT, voice recognition, and TTS has the potential to make smart mood lights more versatile and user-friendly. This could lead to increased adoption of these devices by people with disabilities and other users who find traditional smart home controls difficult to use.
