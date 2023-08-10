@@ -52,7 +52,7 @@ To implement this project, Wiznet-W5300 TOE SHIELD board which, is connected to 
 		#### OPEN AI :
 		OpenAI provides web services that allow developers to access and utilize its advanced natural language processing models, like the GPT-3. These web services enable applications to integrate powerful language capabilities, such as text generation, language translation, sentiment analysis, and more. Developers can make API calls to interact with these models over the internet, enabling the integration of OpenAI's technology into a wide range of software applications and services.
 		
-			##### Setting up with OpenAi :
+		##### Setting up with OpenAi :
 		1.	https://openai.com/   Go to this link
 		 
 		
@@ -140,6 +140,7 @@ Conditions:
 
 
 // Call the OpenAI API to generate the AI response
+
 respond = openai.Completion.create(
     model="text-davinci-003",
     prompt=prompt,
@@ -153,6 +154,7 @@ respond = openai.Completion.create(
 
 
 // Extract the generated text from the response
+
 generated_text = respond.choices[0].text.strip()
 
 
@@ -172,8 +174,8 @@ This library is a text-to-speech (TTS) engine that allows you to convert text in
 Installation: To install the pyttsx3 library, you can use pip:
 pip install pyttsx3
 
-###### Another two libraries are used here threading, re. “threading” -- Threads are particularly useful when you want to perform tasks simultaneously without blocking the main program's execution. This can improve the responsiveness of your application, especially for I/O-bound tasks.
-###### “re” -- This library is part of Python's standard library and provides support for regular expressions. Regular expressions are a powerful tool for pattern matching and text manipulation. The re library allows you to search, find, and replace specific patterns within strings.
+ Another two libraries are used here threading, re. “threading” -- Threads are particularly useful when you want to perform tasks simultaneously without blocking the main program's execution. This can improve the responsiveness of your application, especially for I/O-bound tasks.
+ “re” -- This library is part of Python's standard library and provides support for regular expressions. Regular expressions are a powerful tool for pattern matching and text manipulation. The re library allows you to search, find, and replace specific patterns within strings.
 
 #### CIRCUIT CONNECTION:
 	 
