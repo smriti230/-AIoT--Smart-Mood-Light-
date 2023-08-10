@@ -182,6 +182,9 @@ pip install pyttsx3
  “re” -- This library is part of Python's standard library and provides support for regular expressions. Regular expressions are a powerful tool for pattern matching and text manipulation. The re library allows you to search, find, and replace specific patterns within strings.
 
 #### CIRCUIT CONNECTION:
+
+         ![image](https://github.com/smriti230/-AIoT--Smart-Mood-Light-/assets/118045433/97de0596-a0e5-45a5-b01e-8547f59ff3e1)
+
 	 
 LED RGB has 4 pins R (red pin), Common anode, G (green pin), B (blue pin) which is connected with W5100s-EVB-pico board
 •	Red pin is connected with A0
@@ -189,6 +192,9 @@ LED RGB has 4 pins R (red pin), Common anode, G (green pin), B (blue pin) which 
 •	Green pin is connected with D14
 •	Blue pin is connected with D15
 #### CONNECTION DIAGRAM:
+
+         ![image](https://github.com/smriti230/-AIoT--Smart-Mood-Light-/assets/118045433/3c546b49-82e4-41f0-b417-8a4c2a6f3f1f)
+
 	 
 
 ### SAMPLE UTTERANCES:
