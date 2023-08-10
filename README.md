@@ -132,7 +132,7 @@ Conditions:
 6. If the text does not contain any color, choose either "Turn off the light" or "Turn on the light" command.
 """
 
-# Call the OpenAI API to generate the AI response
+// Call the OpenAI API to generate the AI response
 respond = openai.Completion.create(
     model="text-davinci-003",
     prompt=prompt,
@@ -143,7 +143,7 @@ respond = openai.Completion.create(
     presence_penalty=0
 )
 
-# Extract the generated text from the response
+// Extract the generated text from the response
 generated_text = respond.choices[0].text.strip()
 
 This is the code for using Open Ai with python with the API key I will set up with python. Then 
