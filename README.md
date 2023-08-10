@@ -183,7 +183,7 @@ pip install pyttsx3
 
 #### CIRCUIT CONNECTION:
 
-         ![image](https://github.com/smriti230/-AIoT--Smart-Mood-Light-/assets/118045433/97de0596-a0e5-45a5-b01e-8547f59ff3e1)
+![image](https://github.com/smriti230/-AIoT--Smart-Mood-Light-/assets/118045433/97de0596-a0e5-45a5-b01e-8547f59ff3e1)
 
 	 
 LED RGB has 4 pins R (red pin), Common anode, G (green pin), B (blue pin) which is connected with W5100s-EVB-pico board
@@ -193,7 +193,7 @@ LED RGB has 4 pins R (red pin), Common anode, G (green pin), B (blue pin) which 
 •	Blue pin is connected with D15
 #### CONNECTION DIAGRAM:
 
-         ![image](https://github.com/smriti230/-AIoT--Smart-Mood-Light-/assets/118045433/3c546b49-82e4-41f0-b417-8a4c2a6f3f1f)
+![image](https://github.com/smriti230/-AIoT--Smart-Mood-Light-/assets/118045433/3c546b49-82e4-41f0-b417-8a4c2a6f3f1f)
 
 	 
 
