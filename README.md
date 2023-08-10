@@ -45,27 +45,28 @@ To implement this project, Wiznet-W5300 TOE SHIELD board which, is connected to 
 	1.	MQTT-BROKER
 	2.	OPENAI
 	3.	Google's speech-to-text API
-#### MQTT-BROKER:
-MQTT acts as a broker, facilitating communication between Python and Arduino. Python sends RGB values via MQTT to the Arduino. Arduino, configured to receive MQTT messages, interprets the RGB data and controls the connected RGB LED accordingly. This enables seamless remote control of the RGB LED’s  colour using MQTT protocol, bridging Python and Arduino for effective IoT applications.
-
-#### OPEN AI :
-OpenAI provides web services that allow developers to access and utilize its advanced natural language processing models, like the GPT-3. These web services enable applications to integrate powerful language capabilities, such as text generation, language translation, sentiment analysis, and more. Developers can make API calls to interact with these models over the internet, enabling the integration of OpenAI's technology into a wide range of software applications and services.
-
-	##### Setting up with OpenAi :
-1.	https://openai.com/   Go to this link
- 
-
-2.	Go to menu and then Sign up (Create a new account) or otherwise just Log in 
- 
-3.	Then you can see above three options go to API for generating the API Key.
- 
-4.	Then go to  Personal   view API Keys 
- 
-From Create new secret key option you can create a new API , It will generate once and have take a copy of that.
-
-#### GOOGLE TEXT TO SPEECH:
-	recognized_text = recognizer.recognize_google(audio)
-this code snippet utilizes the Google text-to-speech API service through the recognize_google function provided by the SpeechRecognition library in Python. This function sends the recorded audio data to Google's servers for speech recognition processing, and then it returns the recognized text back to your Python program.In this case, the recognize_google function is using the Google Web Speech API to perform the speech-to-text conversion, allowing you to transcribe spoken language into written text.
+    
+		#### MQTT-BROKER:
+		MQTT acts as a broker, facilitating communication between Python and Arduino. Python sends RGB values via MQTT to the Arduino. Arduino, configured to receive MQTT messages, interprets the RGB data and controls the connected RGB LED accordingly. This enables seamless remote control of the RGB LED’s  colour using MQTT protocol, bridging Python and Arduino for effective IoT applications.
+		
+		#### OPEN AI :
+		OpenAI provides web services that allow developers to access and utilize its advanced natural language processing models, like the GPT-3. These web services enable applications to integrate powerful language capabilities, such as text generation, language translation, sentiment analysis, and more. Developers can make API calls to interact with these models over the internet, enabling the integration of OpenAI's technology into a wide range of software applications and services.
+		
+			##### Setting up with OpenAi :
+		1.	https://openai.com/   Go to this link
+		 
+		
+		2.	Go to menu and then Sign up (Create a new account) or otherwise just Log in 
+		 
+		3.	Then you can see above three options go to API for generating the API Key.
+		 
+		4.	Then go to  Personal   view API Keys 
+		 
+		From Create new secret key option you can create a new API , It will generate once and have take a copy of that.
+		
+		#### GOOGLE TEXT TO SPEECH:
+			recognized_text = recognizer.recognize_google(audio)
+		this code snippet utilizes the Google text-to-speech API service through the recognize_google function provided by the SpeechRecognition library in Python. This function sends the recorded audio data to Google's servers for speech recognition processing, and then it returns the recognized text back to your Python program.In this case, the recognize_google function is using the Google Web Speech API to perform the speech-to-text conversion, allowing you to transcribe spoken language into written text.
 
 
 6.	### WORKFLOW
