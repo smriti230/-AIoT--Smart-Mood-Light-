@@ -12,14 +12,14 @@ TABLE OF CONTENTS:
 9.	OUTPUT
 10.	CONCLUSION
 
-1.	INTRODUCTION:
+1.	### INTRODUCTION:
 
 Welcome to the future of lighting innovation – the smart Lighting System! With its cutting-edge technology and seamless integration of voice commands, our system brings your dreams to life with a mere utterance. Imagine a world Where your words can paint your surrounding with vibrant hues and mesmerizing ambiance. With our Smart lighting System, you become the conductor, orchestrating a symphony of colours to suit your mood and preferences. Where Your voices becomes the pallete , and the lights are your canvas. 
 	Introducing “Smart mood lighting system”. This cutting-edge system integrates voice commands and AI -driven text analysis to create a truly personalized and immersive experience. Basically with the Python programming we will give voice commands Which then communicates with the ChatGPT to accurately interpret then on basis of the interpretation it will extract the desired colour code and will take desired actions.
 
 To implement this project, Wiznet-W5300 TOE SHIELD board which, is connected to the LED RGB, With the board we can give the commands to LED to give the particular ambiance of the room.
 
-2.	HARDWARE USED:
+2.	#### HARDWARE USED:
 
 •	WIZnet-W5300 TOE SHIELD + STM32-F429ZI board
  
@@ -30,18 +30,18 @@ To implement this project, Wiznet-W5300 TOE SHIELD board which, is connected to 
 •	BREAD BOARD
  
 
-3.	SOFTWARES AND SERVICES USED
+3.	### SOFTWARES AND SERVICES USED
 
 •	MQTT SERVICE
 •	ARDUINO IDE
 •	PYCHARM
 
-4.	PROGRAMMING LANGUAGES
+4.	### PROGRAMMING LANGUAGES
 
 •	C++
 •	PYTHON
 
-5.	APPS AND THE ONLINE SERVICES USED:
+5.	### APPS AND THE ONLINE SERVICES USED:
 	1.	MQTT-BROKER
 	2.	OPENAI
 	3.	Google's speech-to-text API
@@ -105,14 +105,14 @@ Code:
 
 import openai
 
-# Set up OpenAI API key
+// Set up OpenAI API key
 openai.api_key = "sk-b7***********************oPb4L60"
 
 
 def process_ai_model(voice_command):
 
 
-# Prepare the prompt for the OpenAI API
+// Prepare the prompt for the OpenAI API
 
 prompt = f"""Convert the given text to a command among the following options:
 - Turn off the light
