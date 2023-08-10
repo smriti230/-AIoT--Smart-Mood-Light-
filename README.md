@@ -46,7 +46,7 @@ To implement this project, Wiznet-W5300 TOE SHIELD board which, is connected to 
 	2.	OPENAI
 	3.	Google's speech-to-text API
 #### MQTT-BROKER:
-	MQTT acts as a broker, facilitating communication between Python and Arduino. Python sends RGB values via MQTT to the Arduino. Arduino, configured to receive MQTT messages, interprets the RGB data and controls the connected RGB LED accordingly. This enables seamless remote control of the RGB LED’s  colour using MQTT protocol, bridging Python and Arduino for effective IoT applications.
+MQTT acts as a broker, facilitating communication between Python and Arduino. Python sends RGB values via MQTT to the Arduino. Arduino, configured to receive MQTT messages, interprets the RGB data and controls the connected RGB LED accordingly. This enables seamless remote control of the RGB LED’s  colour using MQTT protocol, bridging Python and Arduino for effective IoT applications.
 
 #### OPEN AI :
 OpenAI provides web services that allow developers to access and utilize its advanced natural language processing models, like the GPT-3. These web services enable applications to integrate powerful language capabilities, such as text generation, language translation, sentiment analysis, and more. Developers can make API calls to interact with these models over the internet, enabling the integration of OpenAI's technology into a wide range of software applications and services.
@@ -84,7 +84,9 @@ The workflow of this project “Smart Mood light” for turning on different col
 By combining voice recognition, text analysis, colour interpretation, and LED control, the smart Lighting System ensures a seamless and personalized experience, making it a truly innovative and intuitive way to interact with lighting in your living space.
 
 #### FLOW CHART:
-	 
+
+
+
 
 
 
