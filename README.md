@@ -188,8 +188,9 @@ LED RGB has 4 pins R (red pin), Common anode, G (green pin), B (blue pin) which 
 	 
 
 ### SAMPLE UTTERANCES:
-	I have tested the below given utterances for opening and closing and it was working fine. More phrases can be possible:
-	Turning on:
+I have tested the below given utterances for opening and closing and it was working fine. More phrases can be possible:
+Turning on:
+
 •	Chat Turn on the light\4’
 •	Chat I can’t see anything
 •	Chat I want to look
@@ -232,11 +233,10 @@ Turning off:
 
 •	Chat Let there be darkness 
 
-#### EXAMPLES:
-•	
-•	
+#### EXAMPLES:	
 You said: Chat turn On Magenta
-AI Response: Turn on magenta light	 
+AI Response: Turn on magenta light
+
 You said: Chat Can I have cherry blossom’s view
 AI Response: Turn on pink light 
 	 
