@@ -46,8 +46,8 @@ To implement this project, Wiznet-W5300 TOE SHIELD board which, is connected to 
 
 5.	### APPS AND THE ONLINE SERVICES USED:
 	1.	MQTT-BROKER
-	3.	OPENAI
-	4.	Google's speech-to-text API
+	2.	OPENAI
+	
     
 		#### MQTT-BROKER:
 		MQTT acts as a broker, facilitating communication between Python and Arduino. Python sends RGB values via MQTT to the Arduino. Arduino, configured to receive MQTT messages, interprets the RGB data and controls the connected RGB LED accordingly. This enables seamless remote control of the RGB LED’s  colour using MQTT protocol, bridging Python and Arduino for effective IoT applications.
@@ -67,9 +67,6 @@ To implement this project, Wiznet-W5300 TOE SHIELD board which, is connected to 
 		 
 		From Create new secret key option you can create a new API , It will generate once and have take a copy of that.
 		
-		#### GOOGLE TEXT TO SPEECH:
-			recognized_text = recognizer.recognize_google(audio)
-		this code snippet utilizes the Google text-to-speech API service through the recognize_google function provided by the SpeechRecognition library in Python. This function sends the recorded audio data to Google's servers for speech recognition processing, and then it returns the recognized text back to your Python program.In this case, the recognize_google function is using the Google Web Speech API to perform the speech-to-text conversion, allowing you to transcribe spoken language into written text.
 
 
 6.	### WORKFLOW
@@ -277,3 +274,6 @@ Video Link : https://youtu.be/zpPhmPdvTZE
 
 ### CONCLUSIONS:
 A smart mood light with ChatGPT + voice recognition + TTS is a device that can change its color and brightness in response to a user's voice commands or the content of a conversation. The ChatGPT component allows the light to generate text-based responses to user queries, while the voice recognition and TTS components allow it to understand and respond to spoken commands. This type of light has the potential to be a valuable tool for people with disabilities, as it can provide them with a way to control their environment without having to use their hands. It could also be used to create a more immersive and interactive experience for users of smart home devices.Overall, the combination of ChatGPT, voice recognition, and TTS has the potential to make smart mood lights more versatile and user-friendly. This could lead to increased adoption of these devices by people with disabilities and other users who find traditional smart home controls difficult to use.
+
+### CODE EXPLAINITION : 
+(Explain in the document part properly)
